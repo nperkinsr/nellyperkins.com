@@ -1,0 +1,7 @@
+.me {
+    border-radius: 50%;
+}
+
+.top {
+    background: linear-gradient(45deg, rgb(239, 174, 174), rgb(236, 176, 226), rgb(151, 155, 255));
+}
