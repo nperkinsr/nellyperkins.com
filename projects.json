@@ -33,7 +33,7 @@
     "image": "./assets/choose-hero.jpg",
     "alt": "Choose A Hero project preview",
     "url": "https://nperkinsr.github.io/name-picker-choose-a-hero/",
-    "tags": ["Name Generator", "JSON", "Fun"]
+    "tags": ["Generator", "JSON", "Fun"]
   },
           {
     "eyebrow": "Utility",
@@ -149,7 +149,7 @@
     "description": "Displays the chosen name in a playful breaking-news style message.",
     "image": "./assets/picker-news.jpg",
     "alt": "Name Picker News Report preview",
-    "url": "https://nperkinsr.github.io/name-picker/",
+    "url": "https://nperkinsr.github.io/name-picker-news-report/",
     "tags": ["Generator", "News", "Fun"]
   },
   {
@@ -168,7 +168,7 @@
     "image": "./assets/leap-year.jpg",
     "alt": "Leap Year Calculator preview",
     "url": "https://nperkinsr.github.io/Leap-Year-Calculator/",
-    "tags": ["Practice", "Logic", "Conditionals"]
+    "tags": ["Practice", "Logic"]
   },
   {
     "eyebrow": "Practice Project",
