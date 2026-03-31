@@ -13,8 +13,8 @@
     "title": "How much? | Guess",
     "description": "A multiplayer guessing game where players try to guess the price of real Etsy items. Built with PeerJS for real-time communication.",
     "image": "./assets/how-much.jpg",
-    "alt": "Chat tool with PeerJS project preview",
-    "url": "https://nperkinsr.github.io/chat-with-peerjs/",
+    "alt": "How much? | Guess project preview",
+    "url": "https://nperkinsr.github.io/how-much/",
     "tags": ["Game", "PeerJS", "Fun"]
   },
  {
