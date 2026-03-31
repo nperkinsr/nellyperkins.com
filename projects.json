@@ -1,0 +1,254 @@
+[
+  {
+    "eyebrow": "Website Design",
+    "title": "Tiny Prophecy Website",
+    "description": "A website design project for the products I have been creating in ceramics class. It includes working forms.",
+    "image": "./assets/tinywebsite.jpg",
+    "alt": "Tiny Prophecy website project preview",
+    "url": "https://tinyprophecy.com",
+    "tags": ["Web Development", "UI"]
+  },
+  {
+    "eyebrow": "Browser Game",
+    "title": "How much? | Guess",
+    "description": "A multiplayer guessing game where players try to guess the price of real Etsy items. Built with PeerJS for real-time communication.",
+    "image": "./assets/how-much.jpg",
+    "alt": "Chat tool with PeerJS project preview",
+    "url": "https://nperkinsr.github.io/chat-with-peerjs/",
+    "tags": ["Game", "PeerJS", "Fun"]
+  },
+ {
+    "eyebrow": "Utility",
+    "title": "Chat tool with PeerJS",
+    "description": "A chat tool built with PeerJS for real-time communication. I built this project to practice working with WebRTC and PeerJS.",
+    "image": "./assets/peer-chat.jpg",
+    "alt": "Chat tool with PeerJS project preview",
+    "url": "https://nperkinsr.github.io/chat-with-peerjs/",
+    "tags": ["Utility", "PeerJS", "WebRTC"]
+  },
+  {
+    "eyebrow": "Name Generator",
+    "title": "Choose A Hero",
+    "description": "A name generator for choosing a hero for your next adventure. One of my firsts projects using JSON and JavaScript to create a fun interactive experience.",
+    "image": "./assets/choose-hero.jpg",
+    "alt": "Choose A Hero project preview",
+    "url": "https://nperkinsr.github.io/name-picker-choose-a-hero/",
+    "tags": ["Name Generator", "JSON", "Fun"]
+  },
+          {
+    "eyebrow": "Utility",
+    "title": "URL sortener",
+    "description": "A URL shortener that uses the is.gd API to generate short links. I built this project to practice working with APIs",
+    "image": "./assets/shortener.jpg",
+    "alt": "URL shortener project preview",
+    "url": "https://nperkinsr.github.io/url-shortener/",
+    "tags": ["Utility", "API", "JS"]
+  },
+        {
+    "eyebrow": "Store Design",
+    "title": "Missfortune Market",
+    "description": "This was a Junior challenge from FrontEnd Mentor to design a store landing page. I added my own products.",
+    "image": "./assets/market.jpg",
+    "alt": "Missfortune Market project preview",
+    "url": "https://nperkinsr.github.io/missfortune-market/",
+    "tags": ["Store", "Design", "UI"]
+  },
+      {
+    "eyebrow": "Browser Game",
+    "title": "Ride the bus",
+    "description": "A card game where you must guess the next card correctly to avoid 'riding the bus' and losing the game.",
+    "image": "./assets/bus.jpg",
+    "alt": "Ride the bus project preview",
+    "url": "https://nperkinsr.github.io/ride-the-bus/",
+    "tags": ["Card Game", "JavaScript"]
+  },
+  {
+    "eyebrow": "JavaScript Experiment",
+    "title": "Moody Magic 8 Ball",
+    "description": "It is not in the mood to answer your questions. You can ask anyway.",
+    "image": "./assets/eightball.jpg",
+    "alt": "Magic 8 Ball project preview",
+    "url": "https://nperkinsr.github.io/moody-magic-8-ball/",
+    "tags": ["JavaScript", "Game", "Fun"]
+  },
+  {
+    "eyebrow": "Creative Tool",
+    "title": "Doodle Pad",
+    "description": "A doodle pad with three brush sizes, a fill tool, and an eraser.",
+    "image": "./assets/doodleboard.jpg",
+    "alt": "Doodle Pad project preview",
+    "url": "https://nperkinsr.github.io/doodle-pad/",
+    "tags": ["Canvas", "Drawing", "Tool"]
+  },
+  {
+    "eyebrow": "Website Utility",
+    "title": "Meta Tags Generator",
+    "description": "Generate meta tags to improve how your website looks when it is shared on social platforms.",
+    "image": "./assets/metatag.jpg",
+    "alt": "Meta Tags Generator preview",
+    "url": "https://nperkinsr.github.io/metatag-generator/",
+    "tags": ["SEO", "Meta Tags", "Utility"]
+  },
+  {
+    "eyebrow": "Interactive Build",
+    "title": "Drum Kit",
+    "description": "Seven buttons tied to drum sounds, with matching keyboard controls.",
+    "image": "./assets/drumkit.jpg",
+    "alt": "Drum Kit project preview",
+    "url": "https://nperkinsr.github.io/drum-kit/",
+    "tags": ["JS", "Audio", "Music"]
+  },
+  {
+    "eyebrow": "Utility",
+    "title": "Dice Game",
+    "description": "Decide who wins by rolling two dice. A fun way of practicing conditional logic.",
+    "image": "./assets/dice-game.jpg",
+    "alt": "Dice Game project preview",
+    "url": "https://nperkinsr.github.io/the-dice-game/",
+    "tags": ["Game", "JavaScript", "Dice"]
+  },
+  {
+    "eyebrow": "Browser Game",
+    "title": "Animal Names Bingo",
+    "description": "A bingo game that swaps numbers for overly dramatic animal names.",
+    "image": "./assets/overly-dramatic.jpg",
+    "alt": "Animal Names Bingo preview",
+    "url": "https://nperkinsr.github.io/overly-dramatic-animal-names-bingo/",
+    "tags": ["Game", "Bingo", "Creative"]
+  },
+  {
+    "eyebrow": "JavaScript Experiment",
+    "title": "Mystic Oracle",
+    "description": "A playful oracle that offers a glimpse into your future and your lucky numbers.",
+    "image": "./assets/oracle.jpg",
+    "alt": "Mystic Oracle project preview",
+    "url": "https://nperkinsr.github.io/mystic-oracle/",
+    "tags": ["JavaScript", "Fortune", "Fun"]
+  },
+  {
+    "eyebrow": "Name Generator",
+    "title": "Name Picker | Tattoo",
+    "description": "Replaces the tattoo on Buddy's chest with the chosen name.",
+    "image": "./assets/picker-tattoo.jpg",
+    "alt": "Name Picker Tattoo preview",
+    "url": "https://nperkinsr.github.io/name-picker-tattoo/",
+    "tags": ["Generator", "Fun"]
+  },
+  {
+    "eyebrow": "Name Generator",
+    "title": "Name Picker | Gulf of...?",
+    "description": "Replaces the word 'Mexico' on the map with the chosen name.",
+    "image": "./assets/picker-map.jpg",
+    "alt": "Name Picker map preview",
+    "url": "https://nperkinsr.github.io/name-picker-gulf-of-what/",
+    "tags": ["Generator", "Map", "Fun"]
+  },
+  {
+    "eyebrow": "Name Generator",
+    "title": "Name Picker | News Report",
+    "description": "Displays the chosen name in a playful breaking-news style message.",
+    "image": "./assets/picker-news.jpg",
+    "alt": "Name Picker News Report preview",
+    "url": "https://nperkinsr.github.io/name-picker/",
+    "tags": ["Generator", "News", "Fun"]
+  },
+  {
+    "eyebrow": "Practice Project",
+    "title": "Name a LOTR Character",
+    "description": "Checks whether the typed name exists in the Lord of the Rings character array.",
+    "image": "./assets/LOTR.jpg",
+    "alt": "Lord of the Rings character checker preview",
+    "url": "https://nperkinsr.github.io/Name-a-LOTR-character/",
+    "tags": ["Practice", "Arrays", "LOTR"]
+  },
+  {
+    "eyebrow": "Practice Project",
+    "title": "Leap Year Calculator",
+    "description": "A conditional-logic exercise focused on leap-year rules and comparisons.",
+    "image": "./assets/leap-year.jpg",
+    "alt": "Leap Year Calculator preview",
+    "url": "https://nperkinsr.github.io/Leap-Year-Calculator/",
+    "tags": ["Practice", "Logic", "Conditionals"]
+  },
+  {
+    "eyebrow": "Practice Project",
+    "title": "BMI Calculator",
+    "description": "A JavaScript exercise exploring outputs and return values.",
+    "image": "./assets/bmi-calculator.jpg",
+    "alt": "BMI Calculator preview",
+    "url": "https://nperkinsr.github.io/bmi-calculator/",
+    "tags": ["Practice", "Functions", "JS"]
+  },
+  {
+    "eyebrow": "Practice Project",
+    "title": "Love Calculator",
+    "description": "A project built to learn random number generation in JavaScript.",
+    "image": "./assets/love-calculator.jpg",
+    "alt": "Love Calculator preview",
+    "url": "https://nperkinsr.github.io/love-calculator/",
+    "tags": ["Practice", "Randomness", "JS"]
+  },
+  {
+    "eyebrow": "Browser Game",
+    "title": "Drug Lords / Game UI",
+    "description": "Designed in Canva first, then built out as a functional site.",
+    "image": "./assets/druglords.jpg",
+    "alt": "Drug Lords project preview",
+    "url": "https://nperkinsr.github.io/drug-lords/",
+    "tags": ["UI Design", "Game UI", "Canva"]
+  },
+  {
+    "eyebrow": "Bootstrap Project",
+    "title": "Tinder for Dogs",
+    "description": "A bootcamp Bootstrap challenge to recreate a fun landing page.",
+    "image": "./assets/tinder.jpg",
+    "alt": "Tinder for Dogs preview",
+    "url": "https://nperkinsr.github.io/tinder-for-dogs",
+    "tags": ["Bootstrap", "Exercise"]
+  },
+  {
+    "eyebrow": "Bootstrap Project",
+    "title": "Catflix",
+    "description": "A Bootstrap practice project inspired by Netflix's layout and feel.",
+    "image": "./assets/catflix.jpg",
+    "alt": "Catflix project preview",
+    "url": "https://nperkinsr.github.io/catflix",
+    "tags": ["Bootstrap", "Exercise"]
+  },
+  {
+    "eyebrow": "Portfolio Project",
+    "title": "Personal Website",
+    "description": "Designed in Canva and then translated into a working personal site.",
+    "image": "./assets/personal.jpg",
+    "alt": "Personal website preview",
+    "url": "https://nperkinsr.github.io/personal-site",
+    "tags": ["Portfolio", "Website", "Design"]
+  },
+  {
+    "eyebrow": "CSS Exercise",
+    "title": "Flexbox Exercise",
+    "description": "A responsive pricing-table exercise built while learning Flexbox.",
+    "image": "./assets/flexbox.jpg",
+    "alt": "Flexbox exercise preview",
+    "url": "https://nperkinsr.github.io/flexbox-excercise",
+    "tags": ["CSS", "Flexbox", "Exercise"]
+  },
+  {
+    "eyebrow": "Browser Game",
+    "title": "Fast Typer",
+    "description": "A one-minute typing game where speed and accuracy both matter.",
+    "image": "./assets/typer.jpg",
+    "alt": "Fast Typer game preview",
+    "url": "https://nperkinsr.github.io/fast-typer",
+    "tags": ["Game", "Typing", "JavaScript"]
+  },
+  {
+    "eyebrow": "Browser Game",
+    "title": "Memory Game",
+    "description": "A pixel-art memory game with multiple difficulty levels.",
+    "image": "./assets/memory.jpg",
+    "alt": "Memory Game preview",
+    "url": "https://nperkinsr.github.io/MemoryGameHighRes/",
+    "tags": ["Game", "Memory", "Pixel Art"]
+  }
+]
