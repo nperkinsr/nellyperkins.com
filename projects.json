@@ -1,5 +1,14 @@
 [
   {
+    "eyebrow": "Buttons",
+    "title": "Button Laboratory",
+    "description": "A collection of buttons with different styles and hover effects, built to practice CSS styling and transitions.",
+    "image": "./assets/buttons.jpg",
+    "alt": "Button Laboratory project preview",
+    "url": "https://nperkinsr.github.io/button-laboratory/",
+    "tags": ["Buttons", "CSS", "HTML"]
+  },  
+  {
     "eyebrow": "Website Design",
     "title": "Tiny Prophecy Website",
     "description": "A website design project for the products I have been creating in ceramics class. It includes working forms.",
@@ -7,6 +16,15 @@
     "alt": "Tiny Prophecy website project preview",
     "url": "https://tinyprophecy.com",
     "tags": ["Web Development", "UI"]
+  },
+    {
+    "eyebrow": "Browser Game",
+    "title": "Trivia with OpenTDB",
+    "description": "A single-player trivia game built with HTML, CSS, and JavaScript using the OpenTDB API to fetch questions.",
+    "image": "./assets/trivia.jpg",
+    "alt": "Trivia project preview",
+    "url": "https://nperkinsr.github.io/Single-player-trivia-game/",
+    "tags": ["Game", "Trivia", "API"]
   },
   {
     "eyebrow": "Browser Game",
