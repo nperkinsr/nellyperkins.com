@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Nelly Perkins, a front-end developer and illustrator creating accessible web experiences, playful tools, games and characterful digital artwork." />
+  <meta name="author" content="Nelly Perkins" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#fbcd6d" />
+  <meta property="og:site_name" content="Nelly Perkins Portfolio" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Nelly Perkins | Front-End Developer & Illustrator" />
+  <meta property="og:description" content="Accessible front-end projects, playful web tools, games and illustration by Nelly Perkins." />
+  <meta property="og:url" content="https://nellyperkins.com/" />
+  <meta property="og:image" content="https://nellyperkins.com/assets/images/hero.png" />
+  <meta property="og:image:alt" content="Black and white portfolio illustration by Nelly Perkins" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Nelly Perkins | Front-End Developer & Illustrator" />
+  <meta name="twitter:description" content="Accessible front-end projects, playful web tools, games and illustration by Nelly Perkins." />
+  <meta name="twitter:image" content="https://nellyperkins.com/assets/images/hero.png" />
+  <link rel="canonical" href="https://nellyperkins.com/" />
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <title>Nelly Perkins | Front-End Developer & Illustrator</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="styles.css?v=no-image-shadows" />
+</head>
+
+<body data-page="work">
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Nelly Perkins home">
+      <span>Nelly Perkins</span>
+      <small>Developer + Illustrator</small>
+    </a>
+    <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+      <i class="bi bi-list"></i>
+    </button>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="index.html" data-nav="work">Work</a>
+      <a href="projects.html" data-nav="development">Development</a>
+      <a href="illustration.html" data-nav="illustration">Illustration</a>
+      <a href="about.html" data-nav="about">About</a>
+      <a href="contact.html" data-nav="contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero page-band" data-render="hero"></section>
+    <section class="spotlight-grid page-band" data-render="spotlights"></section>
+
+    <section class="page-band" id="selected-work">
+      <div class="section-heading reveal">
+        <h2>Selected Work</h2>
+        <a class="text-link" href="projects.html">See all work <i class="bi bi-arrow-right"></i></a>
+      </div>
+      <div class="project-grid featured-grid" data-render="featured-projects"></div>
+    </section>
+
+    <section class="page-band">
+      <div class="section-heading reveal">
+        <h2>Illustration</h2>
+        <a class="text-link" href="illustration.html">See more illustrations <i class="bi bi-arrow-right"></i></a>
+      </div>
+      <div class="illustration-strip" data-render="illustration-preview"></div>
+    </section>
+
+    <section class="split-band page-band">
+      <article class="about-preview reveal" data-render="about-preview"></article>
+      <article class="skills-panel reveal" data-render="skills"></article>
+    </section>
+  </main>
+
+  <footer class="site-footer" data-render="footer"></footer>
+  <script src="scripts.js?v=image-protection"></script>
+</body>
+
+</html>

@@ -1,0 +1,648 @@
+{
+  "site": {
+    "name": "Nelly Perkins",
+    "role": "Developer + Illustrator",
+    "email": "nellyperkins@gmail.com",
+    "location": "Europe (Remote)",
+    "github": "https://github.com/nperkinsr",
+    "copyright": "2026 Nelly Perkins"
+  },
+  "footer": {
+    "image": "assets/images/falling.png",
+    "imageAlt": "Decorative footer illustration"
+  },
+  "hero": {
+    "eyebrow": "Front-end developer and illustrator",
+    "title": "Useful code. Curious characters.",
+    "description": "I craft accessible web experiences, playful tools, and ink-drawn characters from slightly stranger worlds.",
+    "image": "assets/images/hero.png",
+    "imageAlt": "Black and white illustration used as a portfolio placeholder",
+    "primaryCta": {
+      "label": "View selected work",
+      "url": "#selected-work"
+    },
+    "secondaryCta": {
+      "label": "See illustrations",
+      "url": "illustration.html"
+    }
+  },
+  "spotlights": [
+    {
+      "icon": "bi-code-slash",
+      "title": "I build digital experiences",
+      "description": "Clean, accessible front-end code that brings ideas to life across every screen."
+    },
+    {
+      "icon": "bi-vector-pen",
+      "title": "I draw strange little worlds",
+      "description": "Characters, creatures, tiny scenes, and editorial illustration with hand-made charm."
+    }
+  ],
+  "developmentPage": {
+    "eyebrow": "Development",
+    "title": "Things I've designed, coded and brought to life.",
+    "description": "This is a collection of projects I've designed and developed while expanding my front-end skills. It includes multiplayer games, practical tools, API experiments and interactive interfaces, each created to explore a different technical challenge and turn an idea into something people can actually use."
+  },
+  "illustrationPage": {
+    "eyebrow": "Illustration",
+    "title": "Creative experience translated into illustration.",
+    "description": "I began my career in graphic design, creating work for major international brands before moving towards illustration. That experience continues to shape how I work today, bringing structure, clarity and intention to product illustration, digital artwork, icon design, pixel art and graphic animation."
+  },
+  "projects": [
+    {
+      "title": "The Lost Inscription",
+      "description": "A fast multiplayer memory game where players reproduce symbol sequences to earn the highest score.",
+      "image": "assets/images/the-lost-inscription.png",
+      "imageAlt": "Multiplayer memory game displaying an ordered sequence of symbols for players to reproduce",
+      "pills": ["Game", "Multiplayer", "PeerJS"],
+      "liveUrl": "https://nperkinsr.github.io/the-lost-inscription/",
+      "codeUrl": "https://github.com/nperkinsr/The-lost-inscription",
+      "featured": true
+    },
+    {
+      "title": "Misfortune Market",
+      "description": "A responsive and accessible mock storefront offering a carefully curated selection of unlucky goods.",
+      "image": "assets/images/missfortune-market.png",
+      "imageAlt": "Misfortune Market storefront displaying a product grid of comically unlucky goods",
+      "pills": ["HTML", "CSS", "JavaScript"],
+      "liveUrl": "https://nperkinsr.github.io/misfortune-market/",
+      "codeUrl": "https://github.com/nperkinsr/misfortune-market",
+      "featured": false
+    },
+    {
+      "title": "Alien Customs",
+      "description": "A multiplayer party game where customs agents race to send their full collection of aliens to Earth.",
+      "image": "assets/images/alien-customs.png",
+      "imageAlt": "Multiplayer customs game displaying a collection of aliens with different characteristics",
+      "pills": ["Game", "Multiplayer", "PeerJS"],
+      "liveUrl": "https://nperkinsr.github.io/alien-customs/",
+      "codeUrl": "https://github.com/nperkinsr/alien-customs",
+      "featured": false
+    },
+    {
+      "title": "How Much?",
+      "description": "A multiplayer guessing game where connected players estimate the price of the same product each round.",
+      "image": "assets/images/how-much.png",
+      "imageAlt": "Multiplayer guessing game showing a product and a field for submitting a price",
+      "pills": ["HTML", "CSS", "JavaScript", "PeerJS"],
+      "liveUrl": "https://nperkinsr.github.io/how-much/",
+      "codeUrl": "https://github.com/nperkinsr/how-much",
+      "featured": false
+    },
+    {
+      "title": "Screenshot Editor",
+      "description": "A browser editor for annotating documentation screenshots with numbered markers and drawn circles.",
+      "image": "assets/images/screenshot-editor.png",
+      "imageAlt": "Screenshot editor with tools for adding numbered markers and circular highlights",
+      "pills": ["HTML", "CSS", "JavaScript"],
+      "liveUrl": "https://nperkinsr.github.io/screenshot-editor/",
+      "codeUrl": "https://github.com/nperkinsr/screenshot-editor",
+      "featured": false
+    },
+    {
+      "title": "Button Laboratory",
+      "description": "A collection of more than 80 interactive buttons exploring a range of styles, states and behaviours.",
+      "image": "assets/images/button-laboratory.png",
+      "imageAlt": "Collection of interactive buttons demonstrating different visual styles and states",
+      "pills": ["HTML", "CSS", "JavaScript"],
+      "liveUrl": "https://nperkinsr.github.io/button-laboratory/",
+      "codeUrl": "https://github.com/nperkinsr/button-laboratory",
+      "featured": true
+    },
+    {
+      "title": "Single-Player Trivia",
+      "description": "A timed trivia game using the OpenTDB API, with dynamic questions, scoring and state management.",
+      "image": "assets/images/single-player-trivia.png",
+      "imageAlt": "Single-player trivia interface displaying a timed multiple-choice question",
+      "pills": ["HTML", "CSS", "JavaScript", "API"],
+      "liveUrl": "https://nperkinsr.github.io/single-player-trivia/",
+      "codeUrl": "https://github.com/nperkinsr/single-player-trivia",
+      "featured": false
+    },
+    {
+      "title": "Drum Kit",
+      "description": "An interactive drum kit played with mouse clicks or keyboard controls to explore sound in the browser.",
+      "image": "assets/images/drum-kit.png",
+      "imageAlt": "Interactive browser drum kit with labelled controls for different percussion sounds",
+      "pills": ["HTML", "CSS", "JavaScript"],
+      "liveUrl": "https://nperkinsr.github.io/drum-kit/",
+      "codeUrl": "https://github.com/nperkinsr/drum-kit",
+      "featured": false
+    },
+    {
+      "title": "Chat",
+      "description": "A serverless peer-to-peer chat where hosts and guests connect by unique ID and exchange live messages.",
+      "image": "assets/images/peer-to-peer-chat.png",
+      "imageAlt": "Peer-to-peer chat interface with host and guest connection options and live messages",
+      "pills": ["HTML", "CSS", "JavaScript", "PeerJS"],
+      "liveUrl": "https://nperkinsr.github.io/chat-with-peerjs/",
+      "codeUrl": "https://github.com/nperkinsr/chat-with-peerjs",
+      "featured": false
+    },
+    {
+      "title": "Buddy's Tattoo",
+      "description": "A name picker that reveals its random choice as an animated tattoo on my custom-drawn character.",
+      "image": "assets/images/buddys-tattoo.png",
+      "imageAlt": "Custom-drawn character displaying a randomly selected name as an animated tattoo",
+      "pills": ["HTML", "CSS", "JavaScript", "Animation"],
+      "liveUrl": "https://nperkinsr.github.io/name-picker-tattoo/",
+      "codeUrl": "https://github.com/nperkinsr/name-picker-tattoo",
+      "featured": false
+    },
+    {
+      "title": "Meta Tag Generator",
+      "description": "A practical tool that previews rich links and Google results before generating the required meta tags.",
+      "image": "assets/images/meta-tag-generator.png",
+      "imageAlt": "Meta tag generator showing rich-link and Google search-result previews",
+      "pills": ["HTML", "CSS", "JavaScript"],
+      "liveUrl": "https://nperkinsr.github.io/meta-tag-generator/",
+      "codeUrl": "https://github.com/nperkinsr/meta-tag-generator",
+      "featured": false
+    },
+    {
+      "title": "West Ember",
+      "description": "A single-player trading game about building an empire by reading shifting prices across 30 tense days.",
+      "image": "assets/images/west-ember.png",
+      "imageAlt": "Trading game interface showing changing prices, available goods and the remaining days",
+      "pills": ["HTML", "CSS", "JavaScript", "JSON"],
+      "liveUrl": "https://nperkinsr.github.io/west-ember/",
+      "codeUrl": "https://github.com/nperkinsr/west-ember",
+      "featured": false
+    },
+    {
+      "title": "News Report",
+      "description": "A name picker placing someone from your list in an absurd fake headline using arrays and string logic.",
+      "image": "assets/images/news-report.png",
+      "imageAlt": "Name picker displaying a randomly selected person inside an absurd news headline",
+      "pills": ["HTML", "CSS", "JavaScript"],
+      "liveUrl": "https://nperkinsr.github.io/name-picker-news-report/",
+      "codeUrl": "https://github.com/nperkinsr/name-picker-news-report",
+      "featured": false
+    },
+    {
+      "title": "Tiny Prophecy Website",
+      "description": "An e-commerce website bringing my ceramic sculptures and their interactive experiences together online.",
+      "image": "assets/images/tiny-prophecy.png",
+      "imageAlt": "Tiny Prophecy online shop displaying a collection of interactive ceramic sculptures",
+      "pills": ["HTML", "CSS", "JavaScript"],
+      "liveUrl": "https://tinyprophecy.com",
+      "codeUrl": "https://github.com/nperkinsr/Tiny-Prophecy",
+      "featured": true
+    },
+    {
+      "title": "Tiny Prophecy: Spooks",
+      "description": "An NFC-powered ceramic pumpkin serving a short daily horror story for people who enjoy a good scare.",
+      "image": "assets/images/tiny-prophecy-spooks.png",
+      "imageAlt": "Mobile horror story experience connected to the Spooks ceramic pumpkin by NFC",
+      "pills": ["HTML", "CSS", "JavaScript", "JSON"],
+      "liveUrl": "https://spooks.tinyprophecy.com/",
+      "codeUrl": "https://github.com/nperkinsr/Spooks",
+      "featured": false
+    },
+    {
+      "title": "Tiny Prophecy: Crumb of Fate",
+      "description": "An interactive ceramic fortune cookie revealing a fresh and unusual tip for good luck with every visit.",
+      "image": "assets/images/tiny-prophecy-crumb-of-fate.png",
+      "imageAlt": "Mobile fortune page connected to the Crumb of Fate ceramic sculpture by NFC",
+      "pills": ["HTML", "CSS", "JavaScript", "JSON"],
+      "liveUrl": "https://crumbs.tinyprophecy.com/",
+      "codeUrl": "https://github.com/nperkinsr/Crumbs",
+      "featured": false
+    },
+    {
+      "title": "Tiny Prophecy: Nigel",
+      "description": "An NFC-powered ceramic skull delivering random warnings about bizarre and highly unlikely ways to die.",
+      "image": "assets/images/tiny-prophecy-nigel.png",
+      "imageAlt": "Mobile experience displaying an ominous warning from the ceramic skull Nigel",
+      "pills": ["HTML", "CSS", "JavaScript", "JSON"],
+      "liveUrl": "https://bones.tinyprophecy.com/",
+      "codeUrl": "https://github.com/nperkinsr/Bones",
+      "featured": false
+    },
+    {
+      "title": "Choose a Hero",
+      "description": "A name picker that transforms someone from your list into a reluctant hero with randomised traits.",
+      "image": "assets/images/choose-a-hero.png",
+      "imageAlt": "Name picker displaying a randomly generated reluctant hero and their unusual traits",
+      "pills": ["HTML", "CSS", "JavaScript", "JSON"],
+      "liveUrl": "https://nperkinsr.github.io/name-picker-choose-a-hero/",
+      "codeUrl": "https://github.com/nperkinsr/name-picker-choose-a-hero",
+      "featured": false
+    },
+    {
+      "title": "Ride the Bus",
+      "description": "A browser version of the chaotic card game, featuring four rounds and a complete hand-drawn deck.",
+      "image": "assets/images/ride-the-bus.png",
+      "imageAlt": "Browser card game displaying a selection of original hand-drawn playing cards",
+      "pills": ["HTML", "CSS", "JavaScript", "Illustration"],
+      "liveUrl": "https://nperkinsr.github.io/ride-the-bus/",
+      "codeUrl": "https://github.com/nperkinsr/ride-the-bus",
+      "featured": false
+    },
+    {
+      "title": "Bingo: Overly Dramatic Animal Names",
+      "description": "A theatrical bingo game replacing numbers with tragic animals, complete with a dedicated host module.",
+      "image": "assets/images/animal-names-bingo.png",
+      "imageAlt": "Bingo game featuring overly dramatic animal names and a separate host interface",
+      "pills": ["HTML", "CSS", "JavaScript"],
+      "liveUrl": "https://nperkinsr.github.io/overly-dramatic-animal-names-bingo/",
+      "codeUrl": "https://github.com/nperkinsr/overly-dramatic-animal-names-bingo",
+      "featured": false
+    },
+    {
+      "title": "Gulf of... What?",
+      "description": "A satirical map that replaces Mexico with a randomly selected name using arrays and live DOM updates.",
+      "image": "assets/images/gulf-of-what.png",
+      "imageAlt": "Illustrated map of Mexico displaying a randomly generated replacement name",
+      "pills": ["HTML", "CSS", "JavaScript"],
+      "liveUrl": "https://nperkinsr.github.io/name-picker-gulf-of-what/",
+      "codeUrl": "https://github.com/nperkinsr/name-picker-gulf-of-what",
+      "featured": false
+    },
+    {
+      "title": "Character Generator",
+      "description": "A prompt generator that combines character types, traits and goals to help overcome writer's block.",
+      "image": "assets/images/character-generator.png",
+      "imageAlt": "Character generator displaying a randomly assembled writing prompt",
+      "pills": ["HTML", "CSS", "JavaScript", "JSON"],
+      "liveUrl": "https://nperkinsr.github.io/character-generator/",
+      "codeUrl": "https://github.com/nperkinsr/character-generator",
+      "featured": false
+    },
+    {
+      "title": "Memory Game",
+      "description": "A pixel-art memory game with portrait cards, multiple levels and an elaborate living-room setting.",
+      "image": "assets/images/memory-game.png",
+      "imageAlt": "Pixel-art memory game with portrait cards displayed over an ornate living-room background",
+      "pills": ["HTML", "CSS", "JavaScript"],
+      "liveUrl": "https://nperkinsr.github.io/MemoryGameHighRes/",
+      "codeUrl": "https://github.com/nperkinsr/MemoryGameHighRes",
+      "featured": false
+    }
+  ],
+  "illustrations": [
+    {
+"title": "Suspended Spell",
+"description": "A floating girl held in place beneath the quiet pull of an enchanted pendant.",
+"image": "assets/images/levitating-girl.jpg",
+"imageAlt": "Black ink illustration of a young woman levitating above a shadow",
+"pills": ["Ink", "Character", "Fantasy"]
+},
+{
+"title": "Travelling Village",
+"description": "A patient snail carries an entire hillside village slowly across the landscape.",
+"image": "assets/images/snail-house.jpg",
+"imageAlt": "Black ink illustration of a snail carrying a miniature village",
+"pills": ["Ink", "Architecture", "Fantasy"]
+},
+{
+"title": "Window Watch",
+"description": "A black cat watches the world unfold from a bright window crowded with plants.",
+"image": "assets/images/window-cat.jpg",
+"imageAlt": "Black ink illustration of a cat sitting among plants on a windowsill",
+"pills": ["Ink", "Editorial", "Linework"]
+},
+{
+"title": "Wild Motion",
+"description": "A restless tiger twists through leaves in a lively study of shape and motion.",
+"image": "assets/images/tiger.jpg",
+"imageAlt": "Black ink illustration of a tiger wrestling among leafy branches",
+"pills": ["Ink", "Wildlife", "Botanical"]
+},
+{
+"title": "Contained Curiosity",
+"description": "An octopus curls inside a sealed bottle, patiently waiting to be discovered.",
+"image": "assets/images/octopus-in-a-bottle.jpg",
+"imageAlt": "Black ink illustration of an octopus curled inside a glass bottle",
+"pills": ["Ink", "Character", "Nautical"]
+},
+{
+"title": "The Stoic Gentleman",
+"description": "A sharply dressed cat regards the room with impeccable and unshaken composure.",
+"image": "assets/images/stoic-cat.jpg",
+"imageAlt": "Black ink illustration of a serious cat wearing a formal suit",
+"pills": ["Ink", "Character", "Fashion"]
+},
+{
+"title": "Analog Tangle",
+"description": "An old cassette player vanishes beneath the curious grip of curling tentacles.",
+"image": "assets/images/walkman.jpg",
+"imageAlt": "Black ink illustration of octopus tentacles wrapped around a Walkman",
+"pills": ["Ink", "Retro", "Conceptual"]
+},
+{
+"title": "Bee in Bloom",
+"description": "A bumblebee rests among layered petals in a detailed study of natural forms.",
+"image": "assets/images/bee.jpg",
+"imageAlt": "Black ink illustration of a bumblebee resting inside a large flower",
+"pills": ["Ink", "Botanical", "Wildlife"]
+},
+{
+"title": "Eight Hands at Home",
+"description": "A resourceful octopus handles every household chore without missing a beat.",
+"image": "assets/images/homely-octopus.jpg",
+"imageAlt": "Black ink illustration of an octopus wearing an apron and sweeping",
+"pills": ["Ink", "Character", "Humour"]
+},
+{
+"title": "From Cart to Door",
+"description": "A product illustration connecting online shopping with real-world fulfilment.",
+"image": "assets/images/product-image-e-commerce.JPG",
+"imageAlt": "Digital product illustration of an online retailer packing a customer order",
+"pills": ["Product", "Digital", "E-commerce"]
+},
+{
+"title": "Booking Made Simple",
+"description": "A product illustration showing a simple way to find and book classes online.",
+"image": "assets/images/product-image-bookings-app.JPG",
+"imageAlt": "Digital product illustration of a woman booking a class on a tablet",
+"pills": ["Product", "Digital", "Bookings"]
+},
+{
+"title": "Build Your Business",
+"description": "A product illustration showing how small businesses can build websites online.",
+"image": "assets/images/product-image-site-builder.JPG",
+"imageAlt": "Digital product illustration of a florist building an online business website",
+"pills": ["Product", "Digital", "Web"]
+},
+{
+"title": "Gentle Beast",
+"description": "A gentle horned monster coils quietly, looking far friendlier than expected.",
+"image": "assets/images/monster.jpg",
+"imageAlt": "Black ink illustration of a large coiled monster with horns and fins",
+"pills": ["Ink", "Creature", "Character"]
+},
+{
+"title": "Accept All Cookies",
+"description": "A cheerful robot offers suspicious cookies from inside its trench coat.",
+"image": "assets/images/accept-cookies.jpg",
+"imageAlt": "Black ink illustration of a smiling robot displaying cookies inside its trench coat",
+"pills": ["Ink", "Technology", "Humour"]
+},
+{
+"title": "Flexing Kangaroo",
+"description": "A muscular kangaroo proudly flexes beneath a heartfelt tribute to Mum.",
+"image": "assets/images/kangaroo.jpg",
+"imageAlt": "Black ink illustration of a muscular kangaroo flexing with a Mum tattoo",
+"pills": ["Ink", "Character", "Humour"]
+},
+{
+"title": "Good and Bad",
+"description": "An angel and devil meet, each carrying their own dark centre.",
+"image": "assets/images/good-and-bad.jpg",
+"imageAlt": "Black ink illustration of matching angel and devil creatures facing each other",
+"pills": ["Ink", "Symbolic", "Character"]
+},
+{
+"title": "Death Moth",
+"description": "A spectral moth spreads patterned wings beneath watchful eyes and skull.",
+"image": "assets/images/death-moth.jpg",
+"imageAlt": "Black ink illustration of a death moth with eyes and a skull pattern",
+"pills": ["Ink", "Macabre", "Symmetry"]
+},
+{
+"title": "Strange Frequencies",
+"description": "A portable record player waits patiently for its next strange album.",
+"image": "assets/images/disk-player.jpg",
+"imageAlt": "Black ink illustration of an open suitcase record player with a vinyl disc",
+"pills": ["Ink", "Retro", "Object"]
+},
+{
+"title": "Mind at Sea",
+"description": "A sailor carries an entire restless ocean carefully upon his head.",
+"image": "assets/images/wave-man.jpg",
+"imageAlt": "Black ink portrait of a moustached sailor with ocean waves for hair",
+"pills": ["Ink", "Portrait", "Nautical"]
+},
+{
+"title": "Catch of the Day",
+"description": "A fashionable merman poses confidently in fishnets.",
+"image": "assets/images/merman.jpg",
+"imageAlt": "Black ink illustration of a fish-headed merman wearing fishnet stockings",
+"pills": ["Ink", "Character", "Humour"]
+},
+{
+"title": "Lucky Neko",
+"description": "A smiling lucky cat raises one paw, promising fortune and protection.",
+"image": "assets/images/neko.jpg",
+"imageAlt": "Black ink illustration of a smiling Japanese lucky cat holding a coin",
+"pills": ["Ink", "Folklore", "Character"]
+},
+{
+"title": "Forbidden Fruit",
+"description": "A curious serpent coils around an apple, guarding its tempting prize.",
+"image": "assets/images/apple-in-hand.jpg",
+"imageAlt": "Black ink illustration of a long serpent coiled around a large apple",
+"pills": ["Ink", "Symbolic", "Mythology"]
+},
+{
+"title": "Desert Bones",
+"description": "A cheerful cactus reveals the skeleton quietly peeking from beneath its skin.",
+"image": "assets/images/cactus.jpg",
+"imageAlt": "Black ink illustration of a smiling cactus with a skeleton visible inside",
+"pills": ["Ink", "Macabre", "Botanical"]
+},
+{
+"title": "The Dapper Hare",
+"description": "A distinguished rabbit wears formal tailoring with aristocratic confidence.",
+"image": "assets/images/rabbit.jpg",
+"imageAlt": "Black ink portrait of a rabbit wearing a top hat, suit and cravat",
+"pills": ["Ink", "Portrait", "Character"]
+},
+{
+  "title": "Breakfast Bunch",
+  "description": "A cheerful icon set turning familiar breakfast foods into friendly characters.",
+  "image": "assets/images/breakfast-icons.jpg",
+  "imageAlt": "Colour icon set featuring bacon, egg, toast, coffee, orange juice and pancakes with smiling faces",
+  "pills": ["Icon Design", "Colour", "Character"]  
+},
+{
+  "title": "Nature in Ink",
+  "description": "A hand-drawn icon collection of flowers, mushrooms, acorns and woodland leaves.",
+  "image": "assets/images/botanical-icons.jpg",
+  "imageAlt": "Black ink icon set featuring a rose, tulip, lily, acorns, mushrooms and an oak leaf",
+  "pills": ["Icon Design", "Ink", "Botanical"]
+},
+{
+  "title": "Fruit Friends",
+  "description": "A colourful icon set turning familiar fruits into bright, playful characters.",
+  "image": "assets/images/fruit-icons.jpg",
+  "imageAlt": "Colour icon set featuring a banana, strawberry, blueberry, orange, apple, peach, grapes and watermelon",
+  "pills": ["Icon Design", "Colour", "Character"]
+},
+{
+  "title": "Mysterious Faces",
+  "description": "A black ink icon set exploring strange masks, lunar faces and winged creatures.",
+  "image": "assets/images/mysterious-faces-icons.jpg",
+  "imageAlt": "Black ink icon set featuring a horned mask, crescent moon face, skull moth and long masked face",
+  "pills": ["Icon Design", "Ink", "Conceptual"]
+}
+  ],
+  "about": {
+    "title": "About me",
+    "summary": "I'm a front-end developer and illustrator with a graphic design background. I build accessible, characterful web experiences and create visual work shaped by clarity, curiosity, and careful detail.",
+    "intro": [
+      "I'm Nelly, a multidisciplinary digital creative based in Madrid. I build accessible front-end experiences and create illustration for digital products, often finding ways for the two disciplines to meet.",
+      "My career began in graphic design, creating work for major international brands. That background taught me to think carefully about composition, communication and the purpose behind every visual decision. I later moved into illustration, working across product artwork, icons, pixel art and graphic animation.",
+      "Learning front-end development grew naturally from wanting to bring my own ideas to life. Instead of stopping at how something should look, I wanted to understand how it worked and build the finished experience myself. I now work primarily with HTML, CSS and JavaScript, with a particular interest in creative projects that combine useful interactions with a strong visual identity.",
+      "My experience in technical support and software testing has shaped the way I approach that work. I think about how people will actually use what I build, what might go wrong and how the experience can be made clearer. Accessibility, responsive design, testing and debugging are part of the process from the beginning."
+    ],
+    "sections": [
+      {
+        "title": "How I work",
+        "paragraphs": [
+          "I believe useful products can still have personality. Whether I am building an interactive tool or drawing a peculiar character, I care about the details and test my work thoroughly. I want the finished result to feel considered, dependable and unmistakably made by a person."
+        ]
+      },
+      {
+        "title": "A little more about me",
+        "paragraphs": [
+          "I'm Mexican, based in Madrid, and fluent in Spanish, English and French. I hold a master's degree in Administration and I am an ISTQB® Certified Tester.",
+          "I'm particularly interested in front-end development, creative coding, product illustration and projects where code and illustration belong in the same world."
+        ]
+      }
+    ],
+    "image": "assets/images/myself.svg",
+    "imageAlt": "Placeholder portrait illustration",
+    "notes": [
+      "Graphic designer background with international brand experience.",
+      "Illustration across product, web, icons, pixel art, and motion.",
+      "Mexican, multilingual, and ISTQB® Certified Tester."
+    ]
+  },
+  "skills": [
+    "HTML",
+    "CSS / Sass",
+    "JavaScript",
+    "Responsive Design",
+    "REST APIs",
+    "JSON",
+    "PeerJS / WebRTC",
+    "Git & GitHub",
+    "Accessibility",
+    "UI / UX",
+    "Illustration",
+    "Character Design",
+    "Product Illustration",
+    "Digital Illustration",
+    "Icon Design",
+    "Pixel Art",
+    "Graphic Animation",
+    "ISTQB® Certified Tester",
+    "Adobe Photoshop"
+  ],
+  "cv": {
+    "headline": "Curriculum",
+    "intro": "Technical support lead, front-end developer and illustrator with experience in software testing, documentation, partner training, graphic design and art direction.",
+    "profile": [
+      "I am a collaborative, detail-oriented digital creative with a strong technical support and testing background, now focused on front-end development and visually considered web experiences. I bring together clear communication, careful documentation, problem-solving and a practical understanding of how people actually use digital products.",
+      "I work well across teams because I am used to translating between customers, partners, developers and internal stakeholders. I can spot patterns in recurring issues, explain complex problems clearly, document useful solutions and help others feel supported while the work moves forward.",
+      "My design and illustration background gives me a strong eye for layout, tone and visual detail, while my testing experience keeps me grounded in quality, accessibility and reliability. I enjoy projects where thoughtful code, useful interaction and a strong visual identity all need to work together."
+    ],
+    "experience": [
+      {
+        "role": "Second Line Support / Technical Support Lead",
+        "company": "BaseKit",
+        "dates": "2016 - Present",
+        "details": [
+          "Work closely with cross-functional teams to identify and document bugs, errors, workarounds and product limitations.",
+          "Prepare and deliver partner training in person and remotely, while continuing to create clear help documentation.",
+          "Use agile workflows and tools including JIRA and Cucumber, with hands-on experience creating bug reports."
+        ]
+      },
+      {
+        "role": "First Line Support Agent",
+        "company": "BaseKit",
+        "dates": "2010 - 2016",
+        "details": [
+          "Provided first line support through Zendesk, chat and phone in Spanish and English.",
+          "Created documentation for direct customers, partners and new hires.",
+          "Onboarded, trained and mentored new resources, and documented workarounds to reduce repeated issue escalation."
+        ]
+      },
+      {
+        "role": "Graphic Designer",
+        "company": "RMG Connect",
+        "dates": "2008 - 2009",
+        "details": [
+          "Worked as part of a team responsible for international clients, collaborating closely with illustration and web design teams."
+        ]
+      },
+      {
+        "role": "Art Direction",
+        "company": "Agora",
+        "dates": "2006 - 2008",
+        "details": [
+          "Managed a small team of designers and publicists.",
+          "Served as lead designer for main international accounts and oversaw work submitted for national clients."
+        ]
+      }
+    ],
+    "education": [
+      {
+        "degree": "Master Degree in Administration",
+        "school": "Universidad Complutense",
+        "location": "Madrid, Spain",
+        "dates": "2008 - 2009"
+      },
+      {
+        "degree": "Graphic Design and Advertising",
+        "school": "CEDIM",
+        "location": "Monterrey, Mexico",
+        "dates": "2001 - 2005"
+      }
+    ],
+    "certifications": [
+      {
+        "name": "ISTQB® Certified Tester Foundation Level 2018",
+        "issuer": "UK Testing Board",
+        "date": "29 June 2022"
+      },
+      {
+        "name": "The Complete Full-Stack Web Development Bootcamp",
+        "issuer": "Dr. Angela Yu",
+        "date": "2022"
+      },
+      {
+        "name": "The Git & GitHub Bootcamp",
+        "issuer": "Colt Steele",
+        "date": "2023"
+      },
+      {
+        "name": "The Web Developer Bootcamp",
+        "issuer": "Colt Steele",
+        "date": "2024"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Have an idea? Let's make it real.",
+    "description": "I am available for front-end builds, portfolio sites, playful web tools, illustration commissions, and collaborations that need a careful pair of hands.",
+    "links": [
+      {
+        "label": "Email",
+        "value": "nellyperkins@gmail.com",
+        "url": "mailto:nellyperkins@gmail.com",
+        "icon": "bi-envelope"
+      },
+      {
+        "label": "GitHub",
+        "value": "github.com/nperkinsr",
+        "url": "https://github.com/nperkinsr",
+        "icon": "bi-github"
+      },
+      {
+        "label": "Instagram",
+        "value": "instagram.com/nellyperkins",
+        "url": "https://www.instagram.com/nellyperkins/",
+        "icon": "bi-instagram"
+      },
+      {
+        "label": "Location",
+        "value": "Europe (Remote)",
+        "url": "#",
+        "icon": "bi-globe2"
+      }
+    ]
+  }
+}
