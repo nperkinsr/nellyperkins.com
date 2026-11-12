@@ -201,10 +201,10 @@ const renderCvPage = (target, data) => {
   target.innerHTML = `
     <div class="cv-toolbar reveal">
       <a class="text-link" href="contact.html"><i class="bi bi-arrow-left"></i> Back to contact</a>
-      <button class="wave-button primary" type="button" data-print-cv>
-        <span>Save as PDF</span>
+      <a class="wave-button primary" href="assets/documents/nelly-perkins-cv.pdf" download="Nelly-Perkins-CV.pdf">
+        <span>Download CV (PDF)</span>
         <i class="bi bi-download" aria-hidden="true"></i>
-      </button>
+      </a>
     </div>
     <article class="cv-sheet reveal">
       <header class="cv-header">
@@ -356,11 +356,29 @@ const setupNavigation = () => {
   const toggle = document.querySelector(".nav-toggle");
   const nav = document.querySelector(".site-nav");
 
-  toggle?.addEventListener("click", () => {
-    const isOpen = nav.classList.toggle("is-open");
+  if (!toggle || !nav) return;
+
+  const setOpen = (isOpen) => {
+    nav.classList.toggle("is-open", isOpen);
     toggle.setAttribute("aria-expanded", String(isOpen));
-    toggle.innerHTML = `<i class="bi ${isOpen ? "bi-x-lg" : "bi-list"}"></i>`;
+    toggle.setAttribute("aria-label", isOpen ? "Close navigation" : "Open navigation");
+    toggle.innerHTML = `<i class="bi ${isOpen ? "bi-x-lg" : "bi-list"}" aria-hidden="true"></i>`;
+  };
+
+  toggle.addEventListener("click", () => setOpen(!nav.classList.contains("is-open")));
+  nav.addEventListener("click", (event) => {
+    if (event.target.closest("a")) setOpen(false);
   });
+  document.addEventListener("click", (event) => {
+    if (!event.target.closest(".site-header")) setOpen(false);
+  });
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && nav.classList.contains("is-open")) {
+      setOpen(false);
+      toggle.focus();
+    }
+  });
+  window.matchMedia("(max-width: 720px)").addEventListener("change", () => setOpen(false));
 };
 
 const setupButtonSounds = () => {
@@ -371,12 +389,6 @@ const setupButtonSounds = () => {
       sound.currentTime = 0;
       sound.play().catch(() => {});
     });
-  });
-};
-
-const setupCvPrint = () => {
-  document.querySelector("[data-print-cv]")?.addEventListener("click", () => {
-    window.print();
   });
 };
 
@@ -418,10 +430,7 @@ const loadPortfolio = async () => {
 
     const data = await response.json();
     renderContent(data);
-    activateNav();
-    setupNavigation();
     setupButtonSounds();
-    setupCvPrint();
     setupImageProtection();
     setupReveals();
   } catch (error) {
@@ -433,4 +442,6 @@ const loadPortfolio = async () => {
   }
 };
 
+activateNav();
+setupNavigation();
 loadPortfolio();

@@ -1237,6 +1237,11 @@ p {
 @media (max-width: 720px) {
   .site-header {
     align-items: start;
+    width: 100%;
+    padding-inline: 1rem;
+    /* The dropdown extends below the header and must remain visible. */
+    clip-path: none;
+    box-shadow: none;
   }
 
   .nav-toggle {
@@ -1247,11 +1252,14 @@ p {
   .site-nav {
     position: absolute;
     top: calc(100% + 0.55rem);
-    right: 0;
+    right: 1rem;
     display: none;
     flex-direction: column;
     align-items: stretch;
     width: min(18rem, calc(100vw - 2rem));
+    max-height: calc(100vh - 8rem);
+    max-height: calc(100dvh - 8rem);
+    overflow-y: auto;
     padding: 0.9rem;
     border: 1px solid var(--color-mist);
     border-radius: var(--radius-md);
@@ -1307,6 +1315,12 @@ p {
 }
 
 @media print {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
   .site-header,
   .cv-toolbar {
     display: none;
