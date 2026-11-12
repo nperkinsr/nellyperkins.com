@@ -22,6 +22,8 @@
 
 html {
   scroll-behavior: smooth;
+  /* Preserve the layout width when the mobile menu locks page scrolling. */
+  scrollbar-gutter: stable;
 }
 
 body {
@@ -1010,6 +1012,55 @@ p {
   font: inherit;
 }
 
+.cv-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+}
+
+.cv-language-switch {
+  display: inline-flex;
+  padding: 0.25rem;
+  border: 1px solid var(--color-mist);
+  border-radius: var(--radius-md);
+  gap: 0.25rem;
+}
+
+.cv-language-switch button {
+  min-height: 44px;
+  padding: 0.5rem 1rem;
+  border: 0;
+  border-radius: var(--radius-sm);
+  font: inherit;
+  font-weight: 500;
+  color: var(--color-ink);
+  background: transparent;
+  cursor: pointer;
+}
+
+.cv-language-switch button[aria-pressed="true"] {
+  background: var(--color-ink);
+  color: var(--color-white);
+}
+
+.cv-language-switch button:focus-visible {
+  outline: 2px solid var(--color-ink);
+  outline-offset: 2px;
+}
+
+.cv-skill-groups {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+.cv-skill-groups h3 {
+  font-size: 1rem;
+  line-height: 1.4;
+  margin-bottom: 0.4rem;
+}
+
 .cv-sheet {
   display: grid;
   gap: clamp(1.6rem, 4vw, 2.5rem);
@@ -1239,7 +1290,7 @@ p {
     align-items: start;
     width: 100%;
     padding-inline: 1rem;
-    /* The dropdown extends below the header and must remain visible. */
+    /* Allow the mobile navigation to cover the viewport. */
     clip-path: none;
     box-shadow: none;
   }
@@ -1250,21 +1301,25 @@ p {
   }
 
   .site-nav {
-    position: absolute;
-    top: calc(100% + 0.55rem);
-    right: 1rem;
+    position: fixed;
+    inset: 0;
+    z-index: 1;
     display: none;
     flex-direction: column;
-    align-items: stretch;
-    width: min(18rem, calc(100vw - 2rem));
-    max-height: calc(100vh - 8rem);
-    max-height: calc(100dvh - 8rem);
+    align-items: center;
+    gap: clamp(0.5rem, 2vh, 1.25rem);
+    width: 100%;
+    height: 100vh;
+    height: 100dvh;
     overflow-y: auto;
-    padding: 0.9rem;
-    border: 1px solid var(--color-mist);
-    border-radius: var(--radius-md);
-    background: var(--color-white);
-    box-shadow: var(--shadow);
+    overscroll-behavior: contain;
+    padding: calc(6rem + env(safe-area-inset-top, 0px)) 1.5rem
+      calc(6rem + env(safe-area-inset-bottom, 0px));
+    color: var(--color-white);
+    background: var(--color-ink);
+    text-align: center;
+    font-size: clamp(1.5rem, 5vw, 2rem);
+    font-weight: 500;
   }
 
   .site-nav.is-open {
@@ -1272,7 +1327,69 @@ p {
   }
 
   .site-nav a {
-    padding: 0.7rem;
+    flex-shrink: 0;
+    padding: 0.45rem 0.75rem;
+  }
+
+  .site-nav a:first-child {
+    margin-top: auto;
+  }
+
+  .site-nav a:last-child {
+    margin-bottom: auto;
+  }
+
+  .site-nav a.active {
+    color: var(--color-gold);
+  }
+
+  .nav-open,
+  .nav-open body {
+    overflow: hidden;
+  }
+
+  .nav-open {
+    background: var(--color-ink);
+  }
+
+  .nav-open .site-header {
+    /* A backdrop filter would constrain the fixed overlay to the header. */
+    backdrop-filter: none;
+    background: transparent;
+  }
+
+  .nav-open .nav-toggle {
+    position: fixed;
+    top: calc(1.5rem + env(safe-area-inset-top, 0px));
+    right: max(1rem, env(safe-area-inset-right, 0px));
+    z-index: 2;
+    border-color: var(--color-white);
+    color: var(--color-white);
+    background: transparent;
+  }
+
+  .nav-open .nav-toggle i {
+    display: none;
+  }
+
+  .nav-open .nav-toggle::before,
+  .nav-open .nav-toggle::after {
+    position: absolute;
+    width: 1.35rem;
+    height: 2px;
+    content: "";
+    background: currentColor;
+    transform: rotate(45deg);
+  }
+
+  .nav-open .nav-toggle::after {
+    transform: rotate(-45deg);
+  }
+
+  .nav-open .site-nav a:focus-visible,
+  .nav-open .nav-toggle:focus-visible {
+    outline: 2px solid var(--color-gold);
+    outline-offset: 5px;
   }
 
   .spotlight-grid,
@@ -1282,6 +1399,7 @@ p {
   .mini-project-grid,
   .process-grid,
   .cv-timeline-item,
+  .cv-skill-groups,
   .about-preview,
   .skills-panel {
     grid-template-columns: 1fr;

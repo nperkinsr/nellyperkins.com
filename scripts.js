@@ -195,37 +195,45 @@ const renderContactPage = (target, data) => {
   `;
 };
 
-const renderCvPage = (target, data) => {
-  const { site, cv } = data;
+const renderCvPage = (target, data, language = "en") => {
+  const { site } = data;
+  const cv = data.cvVersions[language];
+  target.lang = language;
 
   target.innerHTML = `
-    <div class="cv-toolbar reveal">
-      <a class="text-link" href="contact.html"><i class="bi bi-arrow-left"></i> Back to contact</a>
-      <a class="wave-button primary" href="assets/documents/nelly-perkins-cv.pdf" download="Nelly-Perkins-CV.pdf">
-        <span>Download CV (PDF)</span>
-        <i class="bi bi-download" aria-hidden="true"></i>
-      </a>
+    <div class="cv-toolbar">
+      <a class="text-link" href="contact.html"><i class="bi bi-arrow-left"></i> ${escapeHTML(cv.backLabel)}</a>
+      <div class="cv-actions">
+        <div class="cv-language-switch" role="group" aria-label="CV language / Idioma del CV">
+          <button type="button" lang="en" data-cv-language="en" aria-pressed="${language === "en"}">English</button>
+          <button type="button" lang="es" data-cv-language="es" aria-pressed="${language === "es"}">Español</button>
+        </div>
+        <a class="wave-button primary" href="${escapeHTML(cv.download)}" download="${escapeHTML(cv.download.split("/").pop())}" hreflang="${language}">
+          <span>${escapeHTML(cv.downloadLabel)}</span>
+          <i class="bi bi-download" aria-hidden="true"></i>
+        </a>
+      </div>
     </div>
-    <article class="cv-sheet reveal">
+    <article class="cv-sheet" id="cv-document" aria-label="${language === "es" ? "Currículum en español" : "English curriculum vitae"}">
       <header class="cv-header">
         <div>
-          <p class="eyebrow">${escapeHTML(site.role)}</p>
-          <h1>${escapeHTML(site.name)}</h1>
+          <p class="eyebrow">${escapeHTML(cv.role)}</p>
+          <h1>${escapeHTML(cv.name)}</h1>
           <p>${escapeHTML(cv.intro)}</p>
         </div>
         <ul class="cv-contact-list">
           <li>${escapeHTML(site.email)}</li>
-          <li>${escapeHTML(site.location)}</li>
+          <li>${escapeHTML(cv.location)}</li>
           <li>${escapeHTML(site.github.replace("https://", ""))}</li>
         </ul>
       </header>
       <section class="cv-section cv-profile">
-        <h2>Profile</h2>
+        <h2>${escapeHTML(cv.headings.profile)}</h2>
         ${cv.profile.map((paragraph) => `<p>${escapeHTML(paragraph)}</p>`).join("")}
       </section>
       <div class="cv-layout">
         <section class="cv-section cv-experience">
-          <h2>Work Experience</h2>
+          <h2>${escapeHTML(cv.headings.experience)}</h2>
           <div class="cv-timeline">
             ${cv.experience
               .map(
@@ -247,7 +255,7 @@ const renderCvPage = (target, data) => {
         </section>
         <aside class="cv-sidebar">
           <section class="cv-section">
-            <h2>Education</h2>
+            <h2>${escapeHTML(cv.headings.education)}</h2>
             <div class="cv-stack">
               ${cv.education
                 .map(
@@ -263,7 +271,7 @@ const renderCvPage = (target, data) => {
             </div>
           </section>
           <section class="cv-section cv-certifications">
-            <h2>Certification</h2>
+            <h2>${escapeHTML(cv.headings.certifications)}</h2>
             <div class="cv-stack">
               ${cv.certifications
                 .map(
@@ -281,11 +289,31 @@ const renderCvPage = (target, data) => {
         </aside>
       </div>
       <section class="cv-section">
-        <h2>Skills & Tools</h2>
-        <div class="pill-row skill-pills">${pillList(data.skills)}</div>
+        <h2>${escapeHTML(cv.headings.skills)}</h2>
+        <div class="cv-skill-groups">
+          ${cv.skillGroups.map((group) => `
+            <div>
+              <h3>${escapeHTML(group.title)}</h3>
+              <p>${escapeHTML(group.description)}</p>
+            </div>
+          `).join("")}
+        </div>
+      </section>
+      <section class="cv-section">
+        <h2>${escapeHTML(cv.headings.languages)}</h2>
+        <p>${escapeHTML(cv.languages)}</p>
       </section>
     </article>
   `;
+
+  target.querySelectorAll("[data-cv-language]").forEach((button) => {
+    button.addEventListener("click", () => {
+      const nextLanguage = button.dataset.cvLanguage;
+      if (nextLanguage === language) return;
+      renderCvPage(target, data, nextLanguage);
+      target.querySelector(`[data-cv-language="${nextLanguage}"]`).focus({ preventScroll: true });
+    });
+  });
 };
 
 const renderFooter = (target, data) => {
@@ -360,9 +388,14 @@ const setupNavigation = () => {
 
   const setOpen = (isOpen) => {
     nav.classList.toggle("is-open", isOpen);
+    document.documentElement.classList.toggle("nav-open", isOpen);
+    document.querySelectorAll("main, footer, .brand").forEach((element) => {
+      element.inert = isOpen;
+    });
     toggle.setAttribute("aria-expanded", String(isOpen));
     toggle.setAttribute("aria-label", isOpen ? "Close navigation" : "Open navigation");
-    toggle.innerHTML = `<i class="bi ${isOpen ? "bi-x-lg" : "bi-list"}" aria-hidden="true"></i>`;
+    // Keep the click target attached while the event bubbles to the document.
+    toggle.querySelector("i")?.setAttribute("class", `bi ${isOpen ? "bi-x-lg" : "bi-list"}`);
   };
 
   toggle.addEventListener("click", () => setOpen(!nav.classList.contains("is-open")));
@@ -373,6 +406,18 @@ const setupNavigation = () => {
     if (!event.target.closest(".site-header")) setOpen(false);
   });
   document.addEventListener("keydown", (event) => {
+    if (event.key === "Tab" && nav.classList.contains("is-open")) {
+      const controls = [toggle, ...nav.querySelectorAll("a[href]")];
+      const first = controls[0];
+      const last = controls[controls.length - 1];
+      if (event.shiftKey && document.activeElement === first) {
+        event.preventDefault();
+        last.focus();
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault();
+        first.focus();
+      }
+    }
     if (event.key === "Escape" && nav.classList.contains("is-open")) {
       setOpen(false);
       toggle.focus();
@@ -429,6 +474,11 @@ const loadPortfolio = async () => {
     }
 
     const data = await response.json();
+    if (page === "cv") {
+      const cvResponse = await fetch("./cv-data.json?v=bilingual-cv");
+      if (!cvResponse.ok) throw new Error(`CV HTTP error: ${cvResponse.status}`);
+      data.cvVersions = await cvResponse.json();
+    }
     renderContent(data);
     setupButtonSounds();
     setupImageProtection();

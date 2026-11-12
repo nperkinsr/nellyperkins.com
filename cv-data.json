@@ -1,0 +1,226 @@
+{
+  "en": {
+    "name": "Nelly Perkins Rodelo",
+    "role": "Multidisciplinary Digital Creative",
+    "intro": "Technical Support Lead · QA & Testing · Front-End Development · Illustration",
+    "location": "Madrid, Spain · Remote",
+    "download": "assets/documents/Nelly_Perkins_CV_EN.pdf",
+    "downloadLabel": "Download English CV (PDF)",
+    "backLabel": "Back to contact",
+    "headings": {
+      "profile": "Profile",
+      "experience": "Professional Experience",
+      "education": "Education",
+      "certifications": "Certification & Further Learning",
+      "skills": "Technical Skills & Software",
+      "languages": "Languages"
+    },
+    "profile": [
+      "Multidisciplinary digital creative and technical support lead with extensive experience in second-line support, software quality assurance, partner training and knowledge base documentation. I combine technical troubleshooting and clear communication with front-end development and a strong eye for visual design. Experienced in working across support, product and development teams to identify issues, document solutions and improve the quality and usability of digital products."
+    ],
+    "experience": [
+      {
+        "role": "Second Line Support / Technical Support Lead",
+        "company": "BaseKit",
+        "dates": "2016–Present",
+        "details": [
+          "Investigate technical issues, identify patterns and work with development and product teams on bugs, workarounds and product limitations.",
+          "Write and maintain support documentation and knowledge base content; prepare and deliver partner training.",
+          "Create detailed bug reports and support testing workflows using tools including Jira, Cucumber and Zendesk."
+        ]
+      },
+      {
+        "role": "First Line Support Agent",
+        "company": "BaseKit",
+        "dates": "2010–2016",
+        "details": [
+          "Provided customer support via Zendesk, chat and telephone in Spanish and English.",
+          "Created documentation for customers, partners and new colleagues; onboarded and mentored new team members."
+        ]
+      },
+      {
+        "role": "Graphic Designer",
+        "company": "RMG Connect",
+        "dates": "2008–2009",
+        "details": [
+          "Collaborated with illustration and web design teams on work for international clients."
+        ]
+      },
+      {
+        "role": "Art Direction",
+        "company": "Agora",
+        "dates": "2006–2008",
+        "details": [
+          "Led a small creative team and oversaw design work for international and national client accounts."
+        ]
+      }
+    ],
+    "education": [
+      {
+        "degree": "Master’s Degree in Administration",
+        "school": "Universidad Complutense",
+        "location": "Madrid, Spain",
+        "dates": "2008–2009"
+      },
+      {
+        "degree": "Graphic Design and Advertising",
+        "school": "CEDIM",
+        "location": "Monterrey, Mexico",
+        "dates": "2001–2005"
+      }
+    ],
+    "certifications": [
+      {
+        "name": "ISTQB® Certified Tester Foundation Level",
+        "issuer": "UK Testing Board",
+        "date": "29 June 2022"
+      },
+      {
+        "name": "The Complete Full-Stack Web Development Bootcamp",
+        "issuer": "Dr Angela Yu",
+        "date": "2022"
+      },
+      {
+        "name": "The Git & GitHub Bootcamp",
+        "issuer": "Colt Steele",
+        "date": "2023"
+      },
+      {
+        "name": "The Web Developer Bootcamp",
+        "issuer": "Colt Steele",
+        "date": "2024"
+      }
+    ],
+    "skillGroups": [
+      {
+        "title": "Development",
+        "description": "HTML, CSS, Sass, JavaScript, responsive design, REST APIs, JSON, PeerJS / WebRTC, Git, GitHub, Visual Studio Code"
+      },
+      {
+        "title": "Quality assurance",
+        "description": "ISTQB® Certified Tester, manual testing, bug reporting, Jira, Cucumber, accessibility"
+      },
+      {
+        "title": "Support & documentation",
+        "description": "Second-line technical support, partner training, knowledge base documentation, Zendesk administration and configuration"
+      },
+      {
+        "title": "Design & illustration",
+        "description": "UI/UX, digital illustration, character design, product illustration, icon design, pixel art, graphic animation, Adobe Photoshop, Affinity Designer, Aseprite"
+      }
+    ],
+    "languages": "Spanish: Native · English: Fluent · French: Conversational"
+  },
+  "es": {
+    "name": "Nelly Perkins Rodelo",
+    "role": "Creativa Digital Multidisciplinar",
+    "intro": "Líder en soporte técnico · QA y pruebas de software · Desarrollo front-end · Ilustración",
+    "location": "Madrid, España · Remoto",
+    "download": "assets/documents/Nelly_Perkins_CV_ES.pdf",
+    "downloadLabel": "Descargar CV en español (PDF)",
+    "backLabel": "Volver a contacto",
+    "headings": {
+      "profile": "Perfil profesional",
+      "experience": "Experiencia profesional",
+      "education": "Formación académica",
+      "certifications": "Certificaciones y formación complementaria",
+      "skills": "Competencias técnicas y software",
+      "languages": "Idiomas"
+    },
+    "profile": [
+      "Profesional creativa multidisciplinar y responsable de soporte técnico, con amplia experiencia en soporte de segundo nivel, aseguramiento de la calidad del software, formación a partners y documentación técnica. Acostumbrada a colaborar con equipos de soporte, producto y desarrollo para identificar incidencias, documentar soluciones y mejorar la calidad y usabilidad de los productos digitales. Combino conocimientos de desarrollo front-end, diseño e ilustración con una sólida experiencia en pruebas y resolución de problemas."
+    ],
+    "experience": [
+      {
+        "role": "Soporte de segundo nivel / Responsable de soporte técnico",
+        "company": "BaseKit",
+        "dates": "2016–Actualidad",
+        "details": [
+          "Investigo incidencias técnicas, identifico patrones y colaboro con los equipos de desarrollo y producto para documentar errores, soluciones alternativas y limitaciones.",
+          "Elaboro y mantengo documentación técnica y artículos de la base de conocimientos; preparo e imparto formación a socios de la empresa.",
+          "Redacto informes de errores detallados y participo en procesos de pruebas utilizando herramientas como Jira, Cucumber y Zendesk."
+        ]
+      },
+      {
+        "role": "Agente de soporte de primer nivel",
+        "company": "BaseKit",
+        "dates": "2010–2016",
+        "details": [
+          "Presté atención al cliente mediante Zendesk, chat y teléfono, tanto en español como en inglés.",
+          "Creé documentación para clientes, socios y nuevos compañeros; participé en la incorporación y formación de nuevos miembros del equipo."
+        ]
+      },
+      {
+        "role": "Diseñadora gráfica",
+        "company": "RMG Connect",
+        "dates": "2008–2009",
+        "details": [
+          "Colaboré con equipos de ilustración y diseño web en proyectos para clientes internacionales."
+        ]
+      },
+      {
+        "role": "Dirección de arte",
+        "company": "Agora",
+        "dates": "2006–2008",
+        "details": [
+          "Dirigí un pequeño equipo creativo y supervisé trabajos de diseño para cuentas nacionales e internacionales."
+        ]
+      }
+    ],
+    "education": [
+      {
+        "degree": "Máster en Administración",
+        "school": "Universidad Complutense",
+        "location": "Madrid, España",
+        "dates": "2008–2009"
+      },
+      {
+        "degree": "Diseño Gráfico y Publicidad",
+        "school": "CEDIM",
+        "location": "Monterrey, México",
+        "dates": "2001–2005"
+      }
+    ],
+    "certifications": [
+      {
+        "name": "ISTQB® Certified Tester Foundation Level",
+        "issuer": "UK Testing Board",
+        "date": "29 de junio de 2022"
+      },
+      {
+        "name": "The Complete Full-Stack Web Development Bootcamp",
+        "issuer": "Dr Angela Yu",
+        "date": "2022"
+      },
+      {
+        "name": "The Git & GitHub Bootcamp",
+        "issuer": "Colt Steele",
+        "date": "2023"
+      },
+      {
+        "name": "The Web Developer Bootcamp",
+        "issuer": "Colt Steele",
+        "date": "2024"
+      }
+    ],
+    "skillGroups": [
+      {
+        "title": "Desarrollo",
+        "description": "HTML, CSS, Sass, JavaScript, diseño responsivo, REST APIs, JSON, PeerJS / WebRTC, Git, GitHub, Visual Studio Code"
+      },
+      {
+        "title": "Calidad y pruebas de software",
+        "description": "Certificación ISTQB®, pruebas manuales, informes de errores, Jira, Cucumber, accesibilidad"
+      },
+      {
+        "title": "Soporte y documentación",
+        "description": "Soporte técnico de segundo nivel, formación a socios, documentación de bases de conocimientos, administración y configuración de Zendesk"
+      },
+      {
+        "title": "Diseño e ilustración",
+        "description": "UI/UX, ilustración digital, diseño de personajes, ilustración de producto, diseño de iconos, pixel art, animación gráfica, Adobe Photoshop, Affinity Designer, Aseprite"
+      }
+    ],
+    "languages": "Español: Lengua materna · Inglés: Fluido · Francés: Intermedio"
+  }
+}

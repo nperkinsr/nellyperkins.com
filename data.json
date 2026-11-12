@@ -55,8 +55,8 @@
       "image": "assets/images/the-lost-inscription.png",
       "imageAlt": "Multiplayer memory game displaying an ordered sequence of symbols for players to reproduce",
       "pills": ["Game", "Multiplayer", "PeerJS"],
-      "liveUrl": "https://github.com/nperkinsr/The-lost-inscription",
-      "codeUrl": "https://nperkinsr.github.io/The-lost-inscription/",
+      "liveUrl": "https://nperkinsr.github.io/the-lost-inscription/",
+      "codeUrl": "https://github.com/nperkinsr/The-lost-inscription",
       "featured": true
     },
     {
