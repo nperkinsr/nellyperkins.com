@@ -1286,6 +1286,11 @@ p {
 }
 
 @media (max-width: 720px) {
+  .cv-header h1 {
+    font-size: clamp(1.125rem, 7vw, 2rem);
+    white-space: nowrap;
+  }
+
   .site-header {
     align-items: start;
     width: 100%;
